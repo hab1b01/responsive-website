@@ -136,6 +136,19 @@ main>section{
     margin-bottom: 0px;
 
 }
+#badge{
+    
+    padding: 45px 42px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: -90px;
+    margin-top: -100px;
+}
+.year{
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
 
 
 
@@ -175,7 +188,9 @@ main>section{
     margin-top: 10px;
 }
 
-
+.arc-img{
+    width: 100%;
+}   
 
 
 
@@ -194,17 +209,28 @@ text-align: center;
 .company img{
     filter: grayscale(100%);
 }
+footer{
+    max-width: 1440px;
+    margin: 110px auto;
+    height: 100px;
+    background-color:#FFF4E7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 /* responsive small devices */
 @media screen and (max-width: 576px){
     .navbar ,
     .nav-links,
-    .teams
+    .teams,
+    .features
 
     {
         flex-direction: column;
     }
-.img-container, .facts-container, .company{
+.img-container, .facts-container, .company,.features{
     grid-template-columns:  repeat(1,1fr);
 }
     .Features{
@@ -220,6 +246,11 @@ text-align: center;
     justify-items: center;
     gap: 50px  ;
  }
+ #badge{
+    margin-left: 20px;
+    margin-top: 20px;
+ }
+
 }
 
 /* responsive medium devices */
